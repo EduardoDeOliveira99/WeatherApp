@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Kdam+Thmor+Pro&family=Open+Sans&family=Roboto+Condensed:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <script src="/assets/js/apis.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <title>Clima Agora</title>
+  </head>
+  <body>
+    <section class="weather-modal">
+      <h1 class="modal__head__title">Pesquise o clima de qualquer cidade:</h1>
+      <div class="modal__input-block">
+        <input
+          class="modal__head__input"
+          type="text"
+          name="city-input"
+          id="city-input"
+          placeholder="Digite o nome de uma cidade aqui"
+        />
+        <button class="modal__head__button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <span class="head__line"></span>
+
+      <div class="modal__citys-grid">
+        <ul class="citys-grid__list">
+          <li class="citys-grid__list-item" >
+            <p>Londres</p>
+          </li>
+          <li class="citys-grid__list-item" >
+            <p>Nova York</p>
+          </li>
+          <li class="citys-grid__list-item" >
+            <p>Brasília</p>
+          </li>
+          <li class="citys-grid__list-item" >
+            <p>Amsterdã</p>
+          </li>
+          <li class="citys-grid__list-item" >
+            <p>Buenos Aires</p>
+          </li>
+          <li class="citys-grid__list-item" >
+            <p>Moscow</p>
+          </li>
+        </ul>
+      </div>
+      <div class="loader disable "></div>
+      <div class="weather-data disable">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="city"></span>
+                <img src="" alt="Bandeira do país" class="country">
+            </h2>
+            <p class="temperature"><span id="temperature"></span>&deg;C</p>
+            <div class="description-container">
+                <p class="description"></p>
+                <img src="" alt="condição do tempo" class="weather-icon">
+            </div>
+            <div class="details-container">
+                <p class="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity-percent"></span>
+                </p>
+                <p class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="wind-speed"></span>
+                </p>
+            </div>
+      </div>
+    </section>
+  </body>
+</html>
